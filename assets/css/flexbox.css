@@ -1,0 +1,169 @@
+/* CABECALHO */
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+/* MENU */
+.menu__lateral{
+    display: flex;
+    flex-direction: column;
+}
+.menu-lateral__logo{
+    align-self: center;
+}
+.menu--lateral__link{
+    display: flex;
+    align-items: center;
+}
+/* MAIN */
+.principal{
+    display: grid; /*transformando a main em display grid */
+    gap: 16px; /*adicionando espacamento em todos os elementos pertecentes ao container/main */
+}
+
+
+/* ARTICLE */
+.cartao-conteudo{
+    display: grid;
+    grid-template-columns:auto 1fr; /*transformando o card em duas colunas com frações iguais(do msm tamanho)*/
+    gap: 16px;  /*substituindo a margin bottom, que precisaria ser aplicada em todos os elementos do container */
+}
+.cartao-destaque{
+     grid-column: span 2; /*indicando que os itens devem ocupar duas colunas, "mesclando" elas */
+}
+.cartao-titulo{
+    grid-column: span 2;
+}
+.cartao-perfil{
+    grid-column: span 2;
+}
+.cartao-button-destaque{
+    grid-column: span 2;
+}
+.cartao-info{
+    display: flex;
+    align-items: center;
+}
+.cartao-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SECAO */
+.secao {
+    display: grid;
+    gap: 16px;
+}
+
+
+/* DESKTOP */
+
+
+@media (min-width: 1440px){
+    body{
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+    .cabecalho{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-column: 2;
+        column-gap: 32px;
+    }
+    .cabecalho__menu{
+        display: none;
+    }
+    .cabecalho__logo{
+        display: none;
+    }
+
+    .cabecalho-perfil{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        column-gap: 8px;
+        align-items: center;
+        justify-self: flex-end;
+    }
+    .menu__lateral{
+        grid-column: 1;
+        grid-row:1 / span 2;
+       
+    }
+    .principal{
+        display: grid;
+        grid-template-areas: 
+        "titulo-pagina titulo-pagina titulo-pagina" 
+        "cartao-article-video cartao-article-video cartao-recente-videos" 
+        "secao-videos secao-videos secao-videos"
+        "cartao-produtos produtos-recentes produtos-recentes"
+        "secao-camisas secao-camisas secao-camisas";
+        grid-template-columns: auto 1fr auto;
+        grid-column: 2;
+        column-gap: 32px;
+    }
+  
+
+    /* NOMEAÇÃO PARA O GRID AREA */
+    .titulo-pagina{
+        grid-area: titulo-pagina;
+    }
+    .cartao-article-video{
+        grid-area:cartao-article-video;
+    }
+    .cartao-recente-videos{
+        grid-area: cartao-recente-videos;
+    }
+    .secao-videos{
+        grid-area: secao-videos;
+    }
+    .cartao-produtos{
+        grid-area: cartao-produtos;
+    }
+    .produtos-recentes{
+        grid-area: produtos-recentes;
+    }
+    .secao-camisas{
+        grid-area: secao-camisas;
+    }
+    /*  */
+
+    .cartao-recentes{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        align-self: flex-start;
+        row-gap: 24px;
+        
+    }
+    .cartao-recentes .cartao-recente-titulo{
+        grid-column: auto ;
+    }
+    .cartao-button-destaque{
+        grid-column: auto;
+    }
+    .cartao-lista{
+        display: grid;
+        row-gap: 16px;
+        grid-column: span 2;
+    }
+    .cartao-item{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 8px;
+    }
+    .cartao-item-thumb{
+        width: 32px;
+        grid-row: span 2;
+    }
+
+    /* SECAO */
+    .secao{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .titulo-secao{
+        grid-column: span 4;
+    }
+}

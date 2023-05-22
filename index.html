@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HZC HOME </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/flexbox.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <button class="cabecalho__menu" aria-label="Menu"><i></i></button>
+        <img src="./assets/img/logo.svg" alt="logotipo hzc" class="cabecalho__logo">
+        <p class="cabecalho-perfil">Giovanna Lima</p>
+        <button class="cabecalho__notificação" aria-label="Notificação"><i></i></button>
+    </header>
+
+    <nav class="menu__lateral menu__lateral-ativo">
+        <img src="./assets/img/logo.svg" alt="Logo da Hzc" class="menu-lateral__logo">
+        <a href="#" class="menu--lateral__link menu--lateral__link-ativo link__inicio">Início</a>
+        <a href="#" class="menu--lateral__link link__videos">Videos</a>
+        <a href="#" class="menu--lateral__link link__picos">Picos</a>
+        <a href="#" class="menu--lateral__link link__integrantes">Integrantes</a>
+        <a href="#" class="menu--lateral__link link__camisas">Camisas</a>
+        <a href="#" class="menu--lateral__link link__pinturas">Pinturas</a>
+    </nav>
+
+
+    <main class="principal">
+        <h2 class="titulo-pagina">Inicio</h2>
+        <article class="cartao cartao-article cartao-article-video">
+            <img src="./assets/img/banner-mobile_1.png" alt="banner cartao" class="cartao-imagem cartao-imagem-mobile">
+            <img src="./assets/img/banner_1.png" alt="banner cartao" class="cartao-imagem cartao-imagem-desktop">
+            <div class="cartao-conteudo">
+                <p class="cartao-destaque">Vídeo em destaque</p>
+                <h3 class="cartao-titulo">Hzc - Life is.../2021</h3>
+                <p class="cartao-perfil">Giovanna Lima</p>
+                <p class="cartao-info cartao-info-tempo">33 Minutos</p>
+                <p class="cartao-info cartao-info-view">53 Visualizações</p>
+                <buton class="cartao-button cartao-button-play cartao-button-destaque">Assistir agora</buton>
+            </div>
+        </article>
+
+        <article class="cartao cartao-recentes cartao-recente-videos">
+            <h3 class="cartao-recente-titulo">Vídeos recentes</h3>
+            <a href="#" class="cartao-link">Ver todos</a>
+            <ul class="cartao-lista">
+                <li class="cartao-item">
+                    <img src="./assets/img/miniatura_1.png" alt="Thumbnail" class="cartao-item-thumb">
+                    <h4 class="cartao-item-titulo">HZC - Love Machine</h4>
+                    <p class="cartao-item-perfil">Giovanna Lima</p>
+                </li>
+
+                <li class="cartao-item">
+                    <img src="./assets/img/miniatura_2.png" alt="Thumbnail" class="cartao-item-thumb">
+                    <h4 class="cartao-item-titulo">HZC - Vol. 3</h4>
+                    <p class="cartao-item-perfil">Giovanna Lima</p>
+                </li>
+
+                <li class="cartao-item">
+                    <img src="./assets/img/miniatura_3.png" alt="Thumbnail" class="cartao-item-thumb">
+                    <h4 class="cartao-item-titulo">HZC - Pescaria na Urca</h4>
+                    <p class="cartao-item-perfil">Giovanna Lima</p>
+                </li>
+
+                <li class="cartao-item">
+                    <img src="./assets/img/miniatura_4.png" alt="Thumbnail" class="cartao-item-thumb">
+                    <h4 class="cartao-item-titulo">Vidalocagi - Guerreiros do Asfalto</h4>
+                    <p class="cartao-item-perfil">Giovanna Lima</p>
+                </li>
+
+                <li class="cartao-item">
+                    <img src="./assets/img/miniatura_5.png" alt="Thumbnail" class="cartao-item-thumb">
+                    <h4 class="cartao-item-titulo">Vidalocagi - Não importa o nível</h4>
+                    <p class="cartao-item-perfil">Giovanna Lima</p>
+                </li>
+            </ul>
+        </article>
+
+        <section class="secao secao-videos">
+          <h3 class="titulo-secao">Videos mais vistos</h3>
+          <article class="cartao">
+             <img src="./assets/img/video_1.png" alt="Video 1" class="cartao-imagem">
+                <div class="cartao-conteudo">
+                 <p class="cartao-perfil">Giovanna Lima</p>
+                 <h3 class="cartao-titulo">Hzc - Tudo sem padrin</h3>
+                 <p class="cartao-info cartao-info-tempo">33 Minutos</p>
+                 <buton class="cartao-button cartao-button-play" aria-label="Assitir agora"></buton>
+                </div>
+           </article>
+    
+            <article class="cartao">
+              <img src="./assets/img/video_2.png" alt="Video 2" class="cartao-imagem">
+              <div class="cartao-conteudo">
+                  <p class="cartao-perfil">Giovanna Lima</p>
+                  <h3 class="cartao-titulo">HZC - Enter The Hu-flez</h3>
+                  <p class="cartao-info cartao-info-tempo">33 Minutos</p>
+                  <buton class="cartao-button cartao-button-play" aria-label="Assitir agora"></buton>
+                </div>
+            </article>
+
+            <article class="cartao">
+             <img src="./assets/img/video_3.png" alt="Video 3" class="cartao-imagem">
+              <div class="cartao-conteudo">
+                 <p class="cartao-perfil">Giovanna Lima</p>
+                 <h3 class="cartao-titulo">HZC - Vol.3</h3>
+                 <p class="cartao-info cartao-info-tempo">33 Minutos</p>
+                 <buton class="cartao-button cartao-button-play" aria-label="Assitir agora"></buton>
+              </div>
+            </article>
+
+            <article class="cartao">
+               <img src="./assets/img/video_4.png" alt="Video 4" class="cartao-imagem">
+                <div class="cartao-conteudo">
+                 <p class="cartao-perfil">Giovanna Lima</p>
+                 <h3 class="cartao-titulo">HZC - Love Machine</h3>
+                 <p class="cartao-info cartao-info-tempo">33 Minutos</p>
+                 <buton class="cartao-button cartao-button-play" aria-label="Assitir agora"></buton>
+               </div>
+            </article>
+        </section>
+
+        <article class="cartao cartao-recentes cartao-produtos ">
+          <h3 class="cartao-recente-titulo">Novas artes</h3>
+          <a href="#" class="cartao-link">Ver todos</a>
+           <ul class="cartao-lista">
+             <li class="cartao-item">
+                <img src="./assets/img/miniatura_1.png" alt="Thumbnail" class="cartao-item-thumb">
+                <h4 class="cartao-item-titulo">HZC - Love Machine</h4>
+                <p class="cartao-item-perfil">Giovanna Lima</p>
+             </li>
+
+             <li class="cartao-item">
+                <img src="./assets/img/miniatura_2.png" alt="Thumbnail" class="cartao-item-thumb">
+                <h4 class="cartao-item-titulo">HZC - Vol. 3</h4>
+                <p class="cartao-item-perfil">Giovanna Lima</p>
+             </li>
+
+             <li class="cartao-item">
+                <img src="./assets/img/miniatura_3.png" alt="Thumbnail" class="cartao-item-thumb">
+                <h4 class="cartao-item-titulo">HZC - Pescaria na Urca</h4>
+                <p class="cartao-item-perfil">Giovanna Lima</p>
+             </li>
+
+             <li class="cartao-item">
+                <img src="./assets/img/miniatura_4.png" alt="Thumbnail" class="cartao-item-thumb">
+                <h4 class="cartao-item-titulo">Vidalocagi - Guerreiros do Asfalto</h4>
+                <p class="cartao-item-perfil">Giovanna Lima</p>
+             </li>
+
+             <li class="cartao-item">
+                <img src="./assets/img/miniatura_5.png" alt="Thumbnail" class="cartao-item-thumb">
+                <h4 class="cartao-item-titulo">Vidalocagii - Não importa o nível</h4>
+                <p class="cartao-item-perfil">Giovanna Lima</p>
+             </li>
+            </ul>
+        </article>
+        
+        <article class="cartao cartao-article produtos-recentes">
+            <img src="./assets/img/banner-mobile_2.png" alt="banner cartao" class="cartao-imagem 
+            cartao-imagem-mobile">
+            <img src="./assets/img/banner_2.png" alt="banner cartao" class="cartao-imagem 
+            cartao-imagem-desktop">
+            <div class="cartao-conteudo">
+               <p class="cartao-destaque">Novas arte</p>
+               <h3 class="cartao-titulo">Only Zikas - Lagoa Dompa Club</h3>
+               <p class="cartao-perfil">Giovanna Lima</p>
+               <p class="cartao-info cartao-info-comprar">33,33</p>
+               <p class="cartao-info cartao-info-view">53 Visualizações</p>
+               <buton class="cartao-button cartao-button-comprar cartao-button-destaque">Comprar agora</buton>
+            </div>
+        </article>
+
+        <section class="secao secao-camisas">
+          <h3 class="titulo-secao">Camisas mais recentes</h3>
+          <article class="cartao">
+             <img src="./assets/img/produto_1.png" alt="Produto 1" class="cartao-imagem">
+             <div class="cartao-conteudo">
+                 <p class="cartao-perfil">Giovanna Lima</p>
+                 <h3 class="cartao-titulo">IBM</h3>
+                 <p class="cartao-info cartao-info-comprar">33,33</p>
+                 <buton class="cartao-button cartao-button-comprar" aria-label="Compre agora"></buton>
+             </div>
+            </article>
+
+            <article class="cartao">
+             <img src="./assets/img/produto_2.png" alt="Produto 2" class="cartao-imagem">
+             <div class="cartao-conteudo">
+                 <p class="cartao-perfil">Giovanna Lima</p>
+                 <h3 class="cartao-titulo">Huflez Crew Philosophy Club</h3>
+                 <p class="cartao-info cartao-info-comprar">33,33</p>
+                 <buton class="cartao-button cartao-button-comprar" aria-label="Compre agora"></buton>
+                </div>
+            </article>
+
+            <article class="cartao">
+             <img src="./assets/img/produto_3.png" alt="Produto 3" class="cartao-imagem">
+             <div class="cartao-conteudo">
+                 <p class="cartao-perfil">Giovanna Lima</p>
+                 <h3 class="cartao-titulo">Corujita noturna</h3>
+                 <p class="cartao-info cartao-info-comprar">33,33</p>
+                 <buton class="cartao-button cartao-button-comprar" aria-label="Compre agora"></buton>
+                 </div>
+            </article>
+
+            <article class="cartao">
+              <img src="./assets/img/produto_4.png" alt="Produto 4" class="cartao-imagem">
+              <div class="cartao-conteudo">
+                 <p class="cartao-perfil">Giovanna Lima</p>
+                 <h3 class="cartao-titulo">GGG - Gatin G Gorro</h3>
+                 <p class="cartao-info cartao-info-comprar">33,33</p>
+                 <buton class="cartao-button cartao-button-comprar" aria-label="Compre agora"></buton>
+                </div>
+            </article>
+      </section>
+   </main>
+<script src="index.js"></script>
+</body>
+</html>
